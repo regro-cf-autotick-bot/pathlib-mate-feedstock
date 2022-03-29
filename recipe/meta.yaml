@@ -1,5 +1,5 @@
 {% set name = "pathlib-mate" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pathlib_mate-{{ version }}.tar.gz
-  sha256: 609df9e52184e591b719accbe93fb667eca545f94a86759ce5fe431d9414b9c4
+  sha256: 8241c3ca06bc007e2cc3f33d275d59ec2da2cd66af911abf46b5d0cbcbb1e918
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.6
     - atomicwrites
-    - autopep8    
+    - autopep8
     #- scandir  # [py<35]
     - six
 
